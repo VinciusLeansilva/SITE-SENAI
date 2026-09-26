@@ -1,0 +1,5 @@
+# Segurança: impede que arquivos enviados sejam executados como PHP.
+php_flag engine off
+<FilesMatch "\.(php|phtml|phar)$">
+    Require all denied
+</FilesMatch>
